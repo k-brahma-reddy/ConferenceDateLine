@@ -1,0 +1,21 @@
+conference_name,track_name,workshop_name,paper_submission_date,abstract_deadline,intimation_date
+ICSE,Research paper track,,2026-06-30,2026-06-23,2026-10-20
+ICSE,In practice track,,2026-10-23,,2026-12-11
+ICSE,Society track,,2026-10-23,,2026-12-18
+ICSE,New ideas and emerging results track,,2026-10-23,,2026-12-18
+ICSE,Journal first track,,2026-10-30,,2026-12-11
+ICSE,Education track,,2026-10-23,,2026-12-18
+ICSE,Doctoral symposium,,2026-11-14,2027-01-26,2026-12-05
+ICSE,Tutorials and technical briefings track,,2026-10-23,2026-11-27,2026-11-13
+ICSE,Student research competition,,2026-11-13,,2026-12-18
+ICSE,Challenge track,,2026-11-13,,2026-07-24
+FSE,Research paper track,,2026-10-02,,2027-03-31
+FSE,In practice track,,2027-01-23,,2027-03-20
+FSE,New ideas and emerging results track,,2026-01-22,,2026-03-17
+FSE,Journal first track,,2026-02-25,,2026-03-25
+FSE,Education track,,2027-01-29,,2027-03-26
+FSE,Student research competition,,2026-01-26,,2026-03-09
+FSE,Tool track,,2026-01-22,,2026-03-17
+FSE,Tutorials and technical briefings track,,2026-01-26,,2026-03-09
+MSR,Research paper track,,2026-10-23,2026-10-20,2027-01-08
+ASE,Research paper track,,2026-03-26,,2026-05-25
