@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Deadline Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Conference Deadline Tracker</h1>
+            <p>Track paper submission deadlines, abstract dates, and notification dates</p>
+        </header>
+
+        <section class="controls">
+            <div class="conference-selector">
+                <label for="conference-filter">Filter by Conference:</label>
+                <select id="conference-filter">
+                    <option value="all">All Conferences</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button id="add-conference-btn" class="btn-secondary">Add Conference</button>
+                <button id="add-workshop-btn" class="btn-primary">Add Workshop</button>
+            </div>
+        </section>
+
+        <section class="timeline-container">
+            <div id="timeline-chart"></div>
+        </section>
+
+        <section class="legend">
+            <h3>Legend</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <span class="color-box blue"></span>
+                    <span>Paper Submission Start</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box orange"></span>
+                    <span>Abstract Deadline</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box purple"></span>
+                    <span>Notification/End Date</span>
+                </div>
+                <div class="legend-item">
+                    <span class="color-box today"></span>
+                    <span>Today</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="workshop-list">
+            <h2>Workshops & Tracks</h2>
+            <div id="workshop-list-container"></div>
+        </section>
+    </div>
+
+    <!-- Add Conference Modal -->
+    <div id="conference-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" id="close-conference-modal">&times;</span>
+            <h2>Add New Conference</h2>
+            <form id="conference-form">
+                <div class="form-group">
+                    <label for="conference-name-input">Conference Name:</label>
+                    <input type="text" id="conference-name-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="conference-year">Year:</label>
+                    <input type="text" id="conference-year" placeholder="2025" required>
+                </div>
+                <button type="submit" class="btn-primary">Add Conference</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Workshop Modal -->
+    <div id="workshop-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" id="close-workshop-modal">&times;</span>
+            <h2>Add New Workshop</h2>
+            <form id="workshop-form">
+                <div class="form-group">
+                    <label for="conference-name">Conference Name:</label>
+                    <input type="text" id="conference-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="track-name">Track Name (optional):</label>
+                    <input type="text" id="track-name">
+                </div>
+                <div class="form-group">
+                    <label for="workshop-name">Workshop Name:</label>
+                    <input type="text" id="workshop-name">
+                </div>
+                <div class="form-group">
+                    <label for="paper-date">Paper Submission Date:</label>
+                    <input type="date" id="paper-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="abstract-date">Abstract Deadline (optional):</label>
+                    <input type="date" id="abstract-date">
+                </div>
+                <div class="form-group">
+                    <label for="intimation-date">Notification Date:</label>
+                    <input type="date" id="intimation-date" required>
+                </div>
+                <button type="submit" class="btn-primary">Add Workshop</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
